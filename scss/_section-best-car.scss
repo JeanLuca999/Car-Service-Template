@@ -1,0 +1,80 @@
+@import './mixins';
+
+.best-car {
+    @include flexProperties(column, center, flex-start);
+    @include maxWidth;
+    padding: 30px 0;
+    &__figure {
+        display: block;
+        max-width: 800px;
+        height: 100%;
+        max-width: 90%;
+        margin-left: 10px;
+        margin-bottom: 20px;
+        img {
+            position: relative;
+            z-index: 2;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            box-shadow: -10px 20px 0px black;
+        }
+    }
+
+    &__text {
+        max-width: 600px;
+        h2 {
+            font-family: "Roboto", sans-serif;
+            font-size: 3rem;
+            font-weight: bold;
+            color: #4d4d4d;
+            margin: 10px 0;
+            &::before {
+                content: '';
+                display: block;
+                position: relative;
+                width: 6ch;
+                height: 8px;
+                background-color: black;
+                margin: 20px 0;
+            }
+        }
+
+        h3 {
+            font-weight: bold;
+            font-size: 1.8rem;
+            color: black;
+            text-transform: uppercase;
+            margin: 5px 0;
+
+        }
+
+        p {
+            font-size: 1.6rem;
+            line-height: 25px;
+            color: #111;
+            margin-bottom: 10px;
+            max-width: 500px;
+        }
+
+        button {
+            background-color: black;
+            font-weight: bold;
+            color: white;
+            border: 0;
+            text-transform: uppercase;
+            padding: 10px 20px;
+        }
+    }
+}
+
+@media screen and (min-width:700px) {
+    .best-car {
+        @include flexProperties(row, center, flex-start);
+
+        &__text {
+            margin-left: 20px;
+        }
+    }
+}
