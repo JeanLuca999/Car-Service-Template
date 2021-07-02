@@ -60,7 +60,8 @@
     &__menu {
         position: relative;
         z-index: 10;
-
+        cursor: pointer;
+        
         div {
             width: 24px;
             height: 3px;

@@ -17,9 +17,9 @@
             <img class="header__logo" src="./images/logo.png" alt="Logo">
 
             <ul class="header__ul">
-                <li class="header__li"><a href="#">Link 01</a></li>
-                <li class="header__li"><a href="#">Link 02</a></li>
-                <li class="header__li"><a href="#">Link 03</a></li>
+                <li class="header__li"><a href="#sobre">Sobre</a></li>
+                <li class="header__li"><a href="#contato">Contato</a></li>
+                <li class="header__li"><a href="#servicos">Serviços</a></li>
             </ul>
 
             <div class="header__menu" id="menu-mobile">
@@ -67,7 +67,7 @@
             </div>
         </section>
 
-        <section class="black-background">
+        <section class="black-background" id="servicos">
             <div class="black-background__flex">
 
                 <div class="black-background__container01">
@@ -125,7 +125,7 @@
             </div>
         </section>
 
-        <section class="history">
+        <section class="history" id="sobre">
             <figure>
                 <img src="./images/car03.jpg" alt="Carro">
             </figure>
@@ -153,8 +153,30 @@
             </div>
         </section>
     </main>
-    <footer class="footer">
+    <footer class="footer" id="contato">
+        <div class="footer__contact">
+            <h2>LOCALIZAÇÃO</h2>
+            <address>28 Jackson Blvd Ste 1020 Chicago IL 60604-2340</address>
+            <div class="footer__icons">
+                <h3>SIGA-NOS</h3>
 
+                <a href="https://www.facebook.com" target="_blank"><span class="iconify" data-icon="akar-icons:facebook-fill" data-inline="false"></span></a>
+
+                <a href="https://www.twitter.com" target="_blank"><span class="iconify" data-icon="ant-design:twitter-circle-filled" data-inline="false"></span></a>
+
+                <a href="https://www.instagram.com" target="_blank"><span class="iconify" data-icon="akar-icons:instagram-fill" data-inline="false"></span></a>
+            </div>
+        </div>
+
+        <div class="footer__form">
+            <form>
+                <legend>FORMULÁRIO DE CONTATO</legend>
+                <input type="text" name="name" placeholder="Seu nome">
+                <input type="email" name="email" placeholder="Seu email">
+                <textarea name="message" placeholder="Sua mensagem"></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
     </footer>
     <script src="./js/main.js"></script>
 </body>
