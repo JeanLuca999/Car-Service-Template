@@ -56,6 +56,7 @@ body {
   width: 90%;
   max-width: 1100px;
   margin: 0 auto;
+  padding: 30px 0;
   height: 60px;
 }
 
@@ -163,6 +164,7 @@ body {
   width: 90%;
   max-width: 1100px;
   margin: 0 auto;
+  padding: 30px 0;
   margin-top: 10vh;
 }
 
@@ -295,6 +297,7 @@ body {
   width: 90%;
   max-width: 1100px;
   margin: 0 auto;
+  padding: 30px 0;
 }
 
 .best-car-icons__container {
@@ -328,7 +331,6 @@ body {
   font-size: 1.6rem;
   line-height: 25px;
   max-width: 500px;
-  margin-bottom: 30px;
 }
 
 .best-car-icons__icons svg {
@@ -352,6 +354,124 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+}
+
+.black-background {
+  background-color: #000;
+  padding: 30px 0;
+}
+
+.black-background__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 30px 0;
+  padding: 0;
+}
+
+.black-background__container01, .black-background__container02, .black-background__container03 {
+  margin: 25px 0;
+}
+
+.black-background__container01 figure, .black-background__container02 figure, .black-background__container03 figure {
+  max-width: 600px;
+}
+
+.black-background__container01 figure img, .black-background__container02 figure img, .black-background__container03 figure img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  -webkit-box-shadow: 10px 10px 0px #db545a;
+          box-shadow: 10px 10px 0px #db545a;
+}
+
+.black-background__container01 h2, .black-background__container02 h2, .black-background__container03 h2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 2rem;
+  color: white;
+  margin-bottom: 20px;
+  margin-top: 30px;
+}
+
+.black-background__container01 p, .black-background__container02 p, .black-background__container03 p {
+  font-size: 1.6rem;
+  color: white;
+  line-height: 25px;
+  margin: 10px 0;
+}
+
+.black-background__container01 button, .black-background__container02 button, .black-background__container03 button {
+  padding: 10px 30px;
+  background-color: #db545a;
+  text-transform: uppercase;
+  color: white;
+  border: 0;
+}
+
+.black-background__container02 h2 {
+  color: #db545a;
+  font-size: 3rem;
+  margin-top: 10px;
+}
+
+.black-background__container02 h3 {
+  font-size: 1.6rem;
+  color: white;
+}
+
+.black-background__container02 figure img {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.black-background__container03 {
+  margin: 0 auto;
+  width: 90%;
+  text-align: left;
+}
+
+.black-background__container03 figure {
+  margin-right: auto;
+  max-width: 600px;
+}
+
+.black-background__container03 figure img {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+@media screen and (min-width: 800px) {
+  .black-background__flex {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .black-background__container03 {
+    text-align: center;
+  }
+  .black-background__container03 figure {
+    margin: 0 auto;
+  }
+  .black-background__container01, .black-background__container02, .black-background__container03, .black-background__container02 {
+    margin: 25px;
   }
 }
 /*# sourceMappingURL=style.css.map */

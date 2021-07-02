@@ -1,0 +1,101 @@
+@import './mixins';
+
+.black-background {
+    background-color: #000;
+    padding: 30px 0;
+    &__flex {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        @include maxWidth;
+        padding: 0;
+    }
+
+    &__container01 {
+        margin: 25px 0;
+        figure {
+            max-width: 600px;
+            img {
+                width: 100%;
+                object-fit: cover;
+                object-position: center;
+                box-shadow: 10px 10px 0px #db545a;
+            }
+        }
+
+        h2 {
+            font-family: "Roboto", sans-serif;
+            font-weight: bold;
+            font-size: 2rem;
+            color: white;
+            margin-bottom: 20px;
+            margin-top: 30px;
+        }
+
+        p {
+            font-size: 1.6rem;
+            color: white;
+            line-height: 25px;
+            margin: 10px 0;
+        }
+
+        button {
+            padding: 10px 30px;
+            background-color: #db545a;
+            text-transform: uppercase;
+            color: white;
+            border: 0;
+        }
+    }
+
+    &__container02 {
+        @extend .black-background__container01;
+        h2 {
+            color: #db545a;
+            font-size: 3rem;
+            margin-top: 10px;
+        }
+        h3 {
+            font-size: 1.6rem;
+            color: white;
+        }
+
+        figure {
+            img {
+                box-shadow: none;
+            }
+        }
+    }
+
+    &__container03 {
+        @extend .black-background__container01;
+        margin: 0 auto;
+        width: 90%;
+        text-align: left;
+        figure {
+            margin-right: auto;
+            max-width: 600px;
+            img {
+                box-shadow: none;
+            }
+        }
+    }
+}
+
+@media screen and (min-width:800px) {
+    .black-background {
+        &__flex {
+            flex-direction: row;
+        }
+        &__container03 {
+            figure {
+                margin: 0 auto;
+            }
+            text-align: center;
+        }
+        &__container01, &__container02 {
+            margin: 25px;
+        }
+    }
+}
