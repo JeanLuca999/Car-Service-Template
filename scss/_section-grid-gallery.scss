@@ -1,0 +1,86 @@
+@import './mixins';
+
+.grid-gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(1fr, 5);
+    grid-template-areas: 
+    "car1"
+    "car2"
+    "info01"
+    "car3"
+    "info02";
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-position: center;
+        object-fit: cover;
+
+        &:nth-child(1) {
+            grid-area: car1;
+            object-position: left;
+        }
+        &:nth-child(2) {
+            grid-area: car2;
+        }
+        &:nth-child(3) {
+            grid-area: car3;
+        }
+    }
+
+    div {
+        &:nth-child(1) {
+            grid-area: info1;
+        }
+
+        &:nth-child(2) {
+            grid-area: info2;
+        }
+    }
+
+    &__card-text01, &__card-text02 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 10px;
+        h2 {
+            font-size: 2.8rem;
+            font-weight: bold;
+            color: #4e4e4e;
+        }
+        p {
+            font-size: 1.6rem;
+            margin: 10px 0;
+        }
+        button {
+            padding: 10px 25px;
+            background-color: #db545a;
+            border: 0;
+            color: white;
+            font-size: 1.6rem;
+            margin-top: 10px;
+        }
+   }
+
+   &__card-text02 {
+       h2 {
+           color: white;
+       }
+       background-color: #db545a;
+       color: white;
+   }
+}
+
+@media screen and (min-width:900px) {
+    .grid-gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        "car1 car1 car2 info1"
+        "car1 car1 info2 car3";
+    }
+}
