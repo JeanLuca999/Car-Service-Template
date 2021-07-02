@@ -1,0 +1,12 @@
+@mixin flexProperties($direction, $justify-content, $align-items) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify-content;
+    align-items: $align-items;
+}
+
+@mixin maxWidth {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
