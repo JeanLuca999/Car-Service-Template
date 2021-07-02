@@ -1,0 +1,54 @@
+@import './mixins';
+
+.best-car-icons {
+    @include maxWidth;
+
+    &__container {
+        @include flexProperties(column, center, flex-start);
+    }
+
+    &__text {
+        h2, p {
+            color: #111;
+        }
+
+        h2 {
+            font-family: "Roboto", sans-serif;
+            font-weight: bold;
+            font-size: 1.8rem;
+            margin: 10px 0;
+        }
+
+        p {
+            font-size: 1.6rem;
+            line-height: 25px;
+            max-width: 500px;
+            margin-bottom: 30px;
+        }
+    }
+
+    &__icons {
+        svg {
+            display: block;
+            font-size: 5rem;
+            margin: 10px;
+        }
+    }
+}
+
+@media screen and (min-width:700px) {
+    .best-car-icons {
+        &__icons {
+            svg {
+                display: inline-block;
+            }
+        }
+
+        &__container {
+           flex-direction: row;
+           justify-content: space-between;
+           align-items: center;
+        }
+
+    }
+}

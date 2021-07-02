@@ -290,4 +290,68 @@ body {
     margin-left: 20px;
   }
 }
+
+.best-car-icons {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.best-car-icons__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.best-car-icons__text h2, .best-car-icons__text p {
+  color: #111;
+}
+
+.best-car-icons__text h2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 1.8rem;
+  margin: 10px 0;
+}
+
+.best-car-icons__text p {
+  font-size: 1.6rem;
+  line-height: 25px;
+  max-width: 500px;
+  margin-bottom: 30px;
+}
+
+.best-car-icons__icons svg {
+  display: block;
+  font-size: 5rem;
+  margin: 10px;
+}
+
+@media screen and (min-width: 700px) {
+  .best-car-icons__icons svg {
+    display: inline-block;
+  }
+  .best-car-icons__container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
 /*# sourceMappingURL=style.css.map */
