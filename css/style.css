@@ -176,7 +176,7 @@ button {
 
 .header__banner h3 {
   font-weight: 300;
-  font-size: 3rem;
+  font-size: 2.5rem;
   color: white;
 }
 
@@ -227,6 +227,9 @@ button {
   }
   .header__menu {
     display: none;
+  }
+  __banner h1 {
+    font-size: 5rem;
   }
 }
 
