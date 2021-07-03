@@ -111,3 +111,38 @@
         }
     }
 }
+
+@media screen and (min-width:700px) {
+    .header {
+        &__ul {
+            display: initial;
+            position: initial;
+            background-image: initial;
+            background-color: transparent;
+            @include flexProperties(row,flex-end, center);
+            max-width: initial;
+            height: initial;
+        }
+
+        &__li {
+            margin: 0;
+            width: initial;
+            margin-right: 10px;
+
+            a {
+                padding: 5px 20px;
+
+                &:hover {
+                    color: black;
+                    background-image: initial;
+                    background-color: white;
+                    border-radius: 2px;
+                }
+            }
+        }
+
+        &__menu {
+            display: none;
+        }
+    }
+}
